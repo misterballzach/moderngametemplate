@@ -1,0 +1,28 @@
+{
+    "name": "Lex.Tests",
+    "rootNamespace": "Lex.Tests",
+    "references": [
+        "Lex.Sim",
+        "Lex.Data",
+        "Lex.Pres",
+        "Lex.Legacy",
+        "Lex.Bootstrap",
+        "UnityEngine.TestRunner",
+        "UnityEditor.TestRunner"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

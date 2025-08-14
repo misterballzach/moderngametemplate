@@ -1,0 +1,20 @@
+{
+    "name": "Lex.Tools",
+    "rootNamespace": "Lex.Tools",
+    "references": [
+        "Lex.Sim",
+        "Lex.Data",
+        "Lex.Pres"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

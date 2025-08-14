@@ -1,0 +1,16 @@
+{
+    "name": "Lex.Data",
+    "rootNamespace": "Lex.Data",
+    "references": [
+        "Lex.Sim"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Lex.Bootstrap",
+    "rootNamespace": "Lex.Bootstrap",
+    "references": [
+        "Lex.Sim",
+        "Lex.Data",
+        "Lex.Pres",
+        "Lex.Legacy"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
