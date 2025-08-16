@@ -12,9 +12,15 @@ namespace Lex.Sim
         /// </summary>
         public int InstanceId { get; }
 
-        public Card()
+        /// <summary>
+        /// The ID of the CardTemplate asset this card was created from.
+        /// </summary>
+        public string TemplateId { get; }
+
+        public Card(string templateId)
         {
             InstanceId = _nextId++;
+            TemplateId = templateId;
         }
     }
 }

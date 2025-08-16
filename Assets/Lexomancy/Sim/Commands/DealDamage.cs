@@ -17,9 +17,8 @@ namespace Lex.Sim.Commands
             {
                 if (target.IsAlive)
                 {
-                    target.Stats.TakeDamage(Amount);
-                    // Later, we can have the log record this event
-                    // ctx.Log.Record(new DamageEvent(...));
+                    var newHealth = target.Stats.TakeDamage(Amount);
+                    ctx.RaiseHealthChanged(target.Id, newHealth);
                 }
             }
         }

@@ -50,7 +50,10 @@ namespace Lex.Sim
             if (_playerDeck.Count > 0)
             {
                 var card = _playerDeck.Draw();
-                _playerHand.TryAdd(card);
+                if (_playerHand.TryAdd(card))
+                {
+                    _ctx.RaiseCardDrawn(card);
+                }
             }
         }
 

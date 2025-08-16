@@ -16,6 +16,17 @@ namespace Lex.Sim
         public Entity Player { get; private set; }
         public Entity Enemy { get; private set; }
 
+        // Events for the presentation layer to subscribe to
+        public event System.Action<EntityId, int> HealthChanged;
+        internal void RaiseHealthChanged(EntityId entityId, int newHealth) => HealthChanged?.Invoke(entityId, newHealth);
+
+        public event System.Action<Card> CardDrawn;
+        internal void RaiseCardDrawn(Card card) => CardDrawn?.Invoke(card);
+
+        public event System.Action<Card> CardDiscarded;
+        internal void RaiseCardDiscarded(Card card) => CardDiscarded?.Invoke(card);
+
+
         private int _nextEntityId = 0;
 
         public SimContext(ulong seed)
